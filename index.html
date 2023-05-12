@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!--  -->
+    <!-- font-awesome -->
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+      integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <!--  -->
+    <link rel="stylesheet" href="index.css" />
+    <link rel="icon" href="mainLogo.png" />
+    <title>Movie Watchlist</title>
+  </head>
+  <body id="search-page">
+    <header class="header">
+      <h1>Find your film</h1>
+      <a href="watchlist.html" target="_parent">
+        <span class="watchlist-text">My Watchlist</span>
+        <img class="watchlist-icon" src="file.png" alt="watchlist icon"
+      /></a>
+      <div class="searchbar-div" id="searchbar-div">
+        <img
+          src="search-Icon.png"
+          alt="search-icon"
+          class="search-icon"
+          id="search-icon"
+        />
+        <input
+          type="search"
+          name="search-bar"
+          id="search-bar"
+          class="searchbar"
+          placeholder="Search for a movie"
+        />
+        <button class="search-btn" id="search-btn">search</button>
+      </div>
+    </header>
+    <section class="before-load before-load-darkmode" id="beforeLoad-sect">
+      <img src="mainLogo.png" alt="logo" class="logo" />
+      <h2 id="h2-beforeload">Start exploring</h2>
+    </section>
+
+    <section class="section-movies visible" id="section-movies">
+      <!-- movie posters here -->
+    </section>
+    <input type="checkbox" id="dark-mode" class="dark-mode-input" />
+    <label for="dark-mode" class="dark-mode-label"></label>
+    <div class="input-background"></div>
+    <script src="index.js" type="module"></script>
+  </body>
+</html>
