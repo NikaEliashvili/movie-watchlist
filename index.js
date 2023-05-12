@@ -95,7 +95,7 @@ async function getMovies() {
   if (searchedMovie) {
     searchBar.value = "";
     const response = await fetch(
-      `http://www.omdbapi.com/?s=${searchedMovie}&apikey=fc1fef96`
+      `https://www.omdbapi.com/?s=${searchedMovie}&apikey=fc1fef96`
     );
     const data = await response.json();
     let movies = data.Search;
@@ -118,7 +118,7 @@ function renderMovie(movies) {
   for (let i = 0; i < movies.length; i++) {
     sectionMovies.innerHTML = "";
     let movieInfo = {};
-    fetch(`http://www.omdbapi.com/?t=${movies[i].Title}&apikey=fc1fef96`)
+    fetch(`https://www.omdbapi.com/?t=${movies[i].Title}&apikey=fc1fef96`)
       .then((res) => res.json())
       .then((movieData) => {
         if (isDarkMode) {
